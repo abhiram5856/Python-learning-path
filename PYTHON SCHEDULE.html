@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>30-Day Python Learning Plan </title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      background-color: #0D1117;
+      color: #FFA500;
+      padding: 20px;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    table {
+      width: 95%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: #161B22;
+      color: #FFA500;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+    }
+    th, td {
+      border: 1px solid #FFA500;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #FF8C00;
+      color: #121212;
+      font-weight: bold;
+    }
+    tr:hover {
+      background-color: rgba(255, 165, 0, 0.2);
+    }
+    a {
+      color: #FFD700;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #FF8C00;
+      text-decoration: underline;
+    }
+    .hidden {
+      display: none;
+    }
+    .button {
+      background-color: #FF8C00;
+      color: #121212;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      margin-top: 20px;
+      border-radius: 8px;
+      transition: background 0.3s, transform 0.3s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .button:hover {
+      background-color: #FFA500;
+      transform: translateY(-2px);
+    }
+    .quote {
+      font-size: 18px;
+      margin: 20px;
+      font-style: italic;
+      color: #FFD700;
+      border-left: 4px solid #FFA500;
+      padding-left: 10px;
+      display: inline-block;
+      max-width: 600px;
+    }
+    img {
+      width: 150px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+    }
+  </style>
+  <script>
+    function showSchedule() {
+      document.getElementById('scheduleTable').style.opacity = "1";
+      document.getElementById('scheduleTable').classList.remove('hidden');
+      document.getElementById('enrollButton').style.display = "none";
+    }
+  </script>
+</head>
+<body>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo">
+  <h1>30-Day Python Learning Plan by Abhiram modukuru</h1>
+  <p class="quote">“The secret of getting ahead is getting started.” – Mark Twain</p>
+  <p class="quote">“The way to get started is to quit talking and begin doing.” – Walt Disney</p>
+  <button id="enrollButton" class="button" onclick="showSchedule()">Enroll for Free</button>
+  
+  <table id="scheduleTable" class="hidden">
+    <tr>
+      <th>Date</th>
+      <th>Topic</th>
+      <th>Duration</th>
+      <th>Difficulty</th>
+      <th>Free Resources</th>
+      <th>Practice Problems</th>
+    </tr>
+    <!-- Week 1: Getting Started -->
+    <tr>
+      <td>Feb 17, 2025<br/>(2 hrs)</td>
+      <td>Introduction to Programming Concepts &amp; Python’s Role</td>
+      <td>2 hrs</td>
+      <td>Beginner</td>
+      <td><a href="https://www.python.org/doc/" target="_blank">Python Official Docs</a></td>
+      <td><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-python" target="_blank">HackerRank 10 Days</a></td>
+    </tr>
+    <tr>
+      <td>Feb 18, 2025<br/>(2 hrs)</td>
+      <td>Installing Python &amp; Setting Up an IDE (VS Code/ PyCharm)</td>
+      <td>2 hrs</td>
+      <td>Beginner</td>
+      <td>
+        <a href="https://www.python.org/downloads/" target="_blank">Python Downloads</a>, 
+        <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
+      </td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">Setup Practice</a></td>
+    </tr>
+    <tr>
+      <td>Feb 19, 2025<br/>(2 hrs)</td>
+      <td>'Hello, World!' - Writing Your First Program</td>
+      <td>2 hrs</td>
+      <td>Beginner</td>
+      <td><a href="https://www.programiz.com/python-programming/hello-world" target="_blank">Programiz Hello World</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">Basic Python Challenges</a></td>
+    </tr>
+    <tr>
+      <td>Feb 20, 2025<br/>(2 hrs)</td>
+      <td>Variables &amp; Data Types (int, float, str, bool)</td>
+      <td>2 hrs</td>
+      <td>Beginner</td>
+      <td><a href="https://www.w3schools.com/python/python_variables.asp" target="_blank">W3Schools Variables</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">Python Practice</a></td>
+    </tr>
+    <tr>
+      <td>Feb 21, 2025<br/>(2 hrs)</td>
+      <td>Basic Operators (+, -, *, /, %)</td>
+      <td>2 hrs</td>
+      <td>Beginner</td>
+      <td><a href="https://www.w3schools.com/python/python_operators.asp" target="_blank">W3Schools Operators</a></td>
+      <td><a href="https://www.hackerrank.com/challenges/python-division/problem" target="_blank">Operators Challenge</a></td>
+    </tr>
+    <tr>
+      <td>Feb 22, 2025<br/>(4 hrs)</td>
+      <td>Advanced Operators (//, **)</td>
+      <td>4 hrs</td>
+      <td>Beginner</td>
+      <td><a href="https://www.programiz.com/python-programming/operators" target="_blank">Programiz Advanced Operators</a></td>
+      <td><a href="https://www.hackerrank.com/challenges/python-arithmetic-operators/problem" target="_blank">Arithmetic Challenge</a></td>
+    </tr>
+    <!-- Week 2: Building Foundations -->
+    <tr>
+      <td>Feb 23, 2025<br/>(4 hrs)</td>
+      <td>If Statements &amp; Conditional Branching</td>
+      <td>4 hrs</td>
+      <td>Beginner</td>
+      <td><a href="https://www.w3schools.com/python/python_conditions.asp" target="_blank">W3Schools Conditions</a></td>
+      <td><a href="https://www.hackerrank.com/challenges/py-if-else/problem" target="_blank">If-Else Challenge</a></td>
+    </tr>
+    <tr>
+      <td>Feb 24, 2025<br/>(2 hrs)</td>
+      <td>Loops: for &amp; while</td>
+      <td>2 hrs</td>
+      <td>Beginner</td>
+      <td><a href="https://www.w3schools.com/python/python_loops.asp" target="_blank">W3Schools Loops</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">Loop Exercises</a></td>
+    </tr>
+    <tr>
+      <td>Feb 25, 2025<br/>(2 hrs)</td>
+      <td>Practice: Using Loops &amp; Conditions</td>
+      <td>2 hrs</td>
+      <td>Beginner</td>
+      <td><a href="https://realpython.com/python-for-loop/" target="_blank">RealPython Loops</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">Python Challenges</a></td>
+    </tr>
+    <tr>
+      <td>Feb 26, 2025<br/>(2 hrs)</td>
+      <td>Lists: Creation, Indexing, &amp; Slicing</td>
+      <td>2 hrs</td>
+      <td>Beginner</td>
+      <td><a href="https://www.w3schools.com/python/python_lists.asp" target="_blank">W3Schools Lists</a></td>
+      <td><a href="https://www.hackerrank.com/challenges/python-lists/problem" target="_blank">Lists Challenge</a></td>
+    </tr>
+    <tr>
+      <td>Feb 27, 2025<br/>(2 hrs)</td>
+      <td>Tuples &amp; Immutability</td>
+      <td>2 hrs</td>
+      <td>Beginner</td>
+      <td><a href="https://www.w3schools.com/python/python_tuples.asp" target="_blank">W3Schools Tuples</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">Tuples Practice</a></td>
+    </tr>
+    <tr>
+      <td>Feb 28, 2025<br/>(2 hrs)</td>
+      <td>Practice: List &amp; Tuple Manipulation</td>
+      <td>2 hrs</td>
+      <td>Beginner</td>
+      <td><a href="https://www.programiz.com/python-programming/list" target="_blank">Programiz Lists</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">Practice Problems</a></td>
+    </tr>
+    <!-- Week 3: Functions & File Handling -->
+    <tr>
+      <td>Mar 1, 2025<br/>(4 hrs)</td>
+      <td>Functions: Defining, Calling &amp; Returning Values</td>
+      <td>4 hrs</td>
+      <td>Intermediate</td>
+      <td><a href="https://www.w3schools.com/python/python_functions.asp" target="_blank">W3Schools Functions</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">Functions Practice</a></td>
+    </tr>
+    <tr>
+      <td>Mar 2, 2025<br/>(4 hrs)</td>
+      <td>Function Parameters &amp; Scope</td>
+      <td>4 hrs</td>
+      <td>Intermediate</td>
+      <td><a href="https://realpython.com/defining-your-own-python-function/" target="_blank">RealPython Functions</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">Parameters Practice</a></td>
+    </tr>
+    <tr>
+      <td>Mar 3, 2025<br/>(2 hrs)</td>
+      <td>Practice: Creating &amp; Using Functions</td>
+      <td>2 hrs</td>
+      <td>Intermediate</td>
+      <td><a href="https://www.programiz.com/python-programming/function" target="_blank">Programiz Functions</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">Functions Challenges</a></td>
+    </tr>
+    <tr>
+      <td>Mar 4, 2025<br/>(2 hrs)</td>
+      <td>File Handling: Reading &amp; Writing Files</td>
+      <td>2 hrs</td>
+      <td>Intermediate</td>
+      <td><a href="https://www.w3schools.com/python/python_file_handling.asp" target="_blank">W3Schools File I/O</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">File I/O Practice</a></td>
+    </tr>
+    <tr>
+      <td>Mar 5, 2025<br/>(2 hrs)</td>
+      <td>Standard Input &amp; Output Methods</td>
+      <td>2 hrs</td>
+      <td>Intermediate</td>
+      <td><a href="https://www.programiz.com/python-programming/input-output" target="_blank">Programiz I/O</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">I/O Exercises</a></td>
+    </tr>
+    <tr>
+      <td>Mar 6, 2025<br/>(2 hrs)</td>
+      <td>Project: File I/O &amp; Input/Output Integration</td>
+      <td>2 hrs</td>
+      <td>Intermediate</td>
+      <td><a href="https://realpython.com/read-write-files-python/" target="_blank">RealPython File I/O</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">Practice Problems</a></td>
+    </tr>
+    <!-- Week 4: Object-Oriented Programming (OOP) -->
+    <tr>
+      <td>Mar 7, 2025<br/>(2 hrs)</td>
+      <td>OOP: Core Principles</td>
+      <td>2 hrs</td>
+      <td>Intermediate</td>
+      <td><a href="https://www.w3schools.com/python/python_classes.asp" target="_blank">W3Schools OOP</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">OOP Exercises</a></td>
+    </tr>
+    <tr>
+      <td>Mar 8, 2025<br/>(4 hrs)</td>
+      <td>OOP: Classes, Objects, Attributes &amp; Methods</td>
+      <td>4 hrs</td>
+      <td>Intermediate</td>
+      <td><a href="https://realpython.com/python3-object-oriented-programming/" target="_blank">RealPython OOP</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">OOP Practice</a></td>
+    </tr>
+    <tr>
+      <td>Mar 9, 2025<br/>(4 hrs)</td>
+      <td>Practice: Creating Classes &amp; Objects</td>
+      <td>4 hrs</td>
+      <td>Intermediate</td>
+      <td><a href="https://www.programiz.com/python-programming/class" target="_blank">Programiz Classes</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">Practice Problems</a></td>
+    </tr>
+    <tr>
+      <td>Mar 10, 2025<br/>(2 hrs)</td>
+      <td>Advanced OOP: Inheritance &amp; Polymorphism</td>
+      <td>2 hrs</td>
+      <td>Advanced</td>
+      <td><a href="https://www.w3schools.com/python/python_inheritance.asp" target="_blank">W3Schools Inheritance</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">OOP Challenges</a></td>
+    </tr>
+    <tr>
+      <td>Mar 11, 2025<br/>(2 hrs)</td>
+      <td>Advanced OOP: Encapsulation &amp; Access Modifiers</td>
+      <td>2 hrs</td>
+      <td>Advanced</td>
+      <td><a href="https://www.programiz.com/python-programming/encapsulation" target="_blank">Programiz Encapsulation</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">OOP Practice</a></td>
+    </tr>
+    <tr>
+      <td>Mar 12, 2025<br/>(2 hrs)</td>
+      <td>Project: Advanced OOP Concepts</td>
+      <td>2 hrs</td>
+      <td>Advanced</td>
+      <td><a href="https://realpython.com/advanced-python-object-oriented-programming/" target="_blank">RealPython Advanced OOP</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">Project Practice</a></td>
+    </tr>
+    <!-- Week 5: Intermediate Concepts & Projects -->
+    <tr>
+      <td>Mar 13, 2025<br/>(2 hrs)</td>
+      <td>Error Handling: Try, Except &amp; Finally</td>
+      <td>2 hrs</td>
+      <td>Intermediate</td>
+      <td><a href="https://www.w3schools.com/python/python_try_except.asp" target="_blank">W3Schools Error Handling</a></td>
+      <td><a href="https://www.hackerrank.com/challenges/exceptions/problem" target="_blank">Exceptions Challenge</a></td>
+    </tr>
+    <tr>
+      <td>Mar 14, 2025<br/>(2 hrs)</td>
+      <td>Modules &amp; Libraries: Importing &amp; Using Functions</td>
+      <td>2 hrs</td>
+      <td>Intermediate</td>
+      <td><a href="https://www.w3schools.com/python/python_modules.asp" target="_blank">W3Schools Modules</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">Modules Practice</a></td>
+    </tr>
+    <tr>
+      <td>Mar 15, 2025<br/>(4 hrs)</td>
+      <td>Practice: Error Handling &amp; External Modules</td>
+      <td>4 hrs</td>
+      <td>Intermediate</td>
+      <td><a href="https://realpython.com/python-modules-packages/" target="_blank">RealPython Modules</a></td>
+      <td><a href="https://www.hackerrank.com/domains/python" target="_blank">Practice Challenges</a></td>
+    </tr>
+    <tr>
+      <td>Mar 16, 2025<br/>(4 hrs)</td>
+      <td>Data Manipulation: Introduction to NumPy</td>
+      <td>4 hrs</td>
+      <td>Intermediate</td>
+      <td><a href="https://numpy.org/doc/stable/user/quickstart.html
+      
+      <tr>
+  <td>Apr 5, 2025<br/>(4 hrs)</td>
+  <td>Project: Build a Simple Calculator</td>
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a href="https://www.freecodecamp.org/news/build-a-simple-calculator-with-python/" target="_blank">FreeCodeCamp Calculator</a></td>
+  <td><a href="https://www.hackerrank.com/challenges/python-calculator/problem" target="_blank">Calculator Challenge</a></td>
+</tr>
+<tr>
+  <td>Apr 6, 2025<br/>(4 hrs)</td>
+  <td>Introduction to SQL: Basics of Database Management</td>
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a href="https://www.w3schools.com/sql/sql_intro.asp" target="_blank">W3Schools SQL Intro</a></td>
+  <td><a href="https://www.hackerrank.com/domains/sql" target="_blank">SQL Challenges</a></td>
+</tr>
+<tr>
+  <td>Apr 7, 2025<br/>(4 hrs)</td>
+  <td>SQL: CRUD Operations (Create, Read, Update, Delete)</td>
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a href="https://www.w3schools.com/sql/sql_crud.asp" target="_blank">W3Schools SQL CRUD</a></td>
+  <td><a href="https://www.hackerrank.com/challenges/sql-1/problem" target="_blank">SQL CRUD Challenge</a></td>
+</tr>
+<tr>
+  <td>Apr 8, 2025<br/>(4 hrs)</td>
+  <td>Project: Build a Simple Database Application</td>
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a href="https://www.freecodecamp.org/news/build-a-simple-database-application-with-python-and-sql/" target="_blank">FreeCodeCamp Database App</a></td>
+  <td><a href="https://www.hackerrank.com/challenges/py-collections-counter/problem" target="_blank">Database Practice</a></td>
+</tr>
+<tr>
+  <td>Apr 9, 2025<br/>(4 hrs)</td>
+  <td>Introduction to NoSQL: Understanding Non-Relational Databases</td>
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a href="https://www.mongodb.com/nosql-explained" target="_blank">MongoDB NoSQL Explained</a></td>
+  <td><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-nosql" target="_blank">NoSQL Challenges</a></td>
+</tr>
+<tr>
+  <td>Apr 10, 2025<br/>(4 hrs)</td>
+  <td>NoSQL: CRUD Operations with MongoDB</td>
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a href="https://www.mongodb.com/docs/manual/crud/" target="_blank">MongoDB CRUD Operations</a></td>
+  <td><a href="https://www.hackerrank.com/challenges/mongodb-1/problem" target="_blank">MongoDB Practice</a></td>
+</tr>
+<tr>
+  <td>Apr 11, 2025<br/>(4 hrs)</td>
+  <td>Project: Build a Simple NoSQL Database Application</td>
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a href="https://www.freecodecamp.org/news/build-a-simple-non-relational-database-application-with-python-and-mongodb/" target="_blank">FreeCodeCamp NoSQL App</a></td>
+  <td><a href="https://www.hackerrank.com/challenges/mongodb-2/problem" target="_blank">NoSQL Practice</a></td>
+</tr>
+<tr>
+  <td>Apr 12, 2025<br/>(4 hrs)</td>
+  <td>Introduction to APIs: Basics of RESTful Services</td>
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a href="https://www.restapitutorial.com/lessons/whatisrest.html" target="_blank">REST API Tutorial</a></td>
+  <td><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-apis" target="_blank">API Challenges</a></td>
+</tr>
+<tr>
+  <td>Apr 13, 2025<br/>(4 hrs)</td>
+  <td>Project: Create a Simple REST API with Flask</td>
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a href="https://flask-restful.readthedocs.io/en/latest/quickstart.html" target="_blank">Flask RESTful Quickstart</a></td>
+  <td><a href="https://www.hackerrank.com/challenges/flask-api/problem" target="_blank">Flask API Challenge</a></td>
+</tr>
+<tr>
+  <td>Apr 14, 2025<br/>(4 hrs)</td>
+  <td>Project: Build a Simple Web Scraper with Python</td>
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a href="https://realpython.com/python-web-scraping-practical-introduction/" target="_blank">RealPython Web Scraping</a></td>
+  <td><a href="https://www.hackerrank.com/challenges/python-web-scraping/problem" target="_blank">Web Scraping Challenge</a></td>
+</tr>
+<tr>
+  <td>Apr 15, 2025<br/>(4 hrs)</td>
+  <td>Project: Create a Simple Data Visualization</td>
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a href="https://www.kaggle.com/code/learnpython/data-visualization-tutorial" target="_blank">Kaggle Data Visualization</a></td>
+  <td><a href="https://www.hackerrank.com/challenges/data-visualization/problem" target="_blank">Data Visualization Challenge</a></td>
+</tr>
+<tr>
+  <td>Apr 16, 2025<br/>(4 hrs)</td>
+  <td>Project: Build a Simple Chatbot with Python</td>
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a href="https://www.freecodecamp.org/news/create-a-simple-chatbot-with-python/" target="_blank">FreeCodeCamp Chatbot</a></td>
+  <td><a href="https://www.hackerrank.com/challenges/chatbot/problem" target="_blank">Chatbot Challenge</a></td>
+</tr>
+<tr>
+  <td>Apr 17, 2025<br/>(4 hrs)</td>
+  <td>Introduction to DBMS: Concepts and Architecture</td>
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a href="https://www.geeksforgeeks.org/database-management-system-dbm/" target="_blank">GeeksforGeeks DBMS</a></td>
+  <td><a href="https://www.hackerrank.com/domains/sql" target="_blank">DBMS Challenges</a></td>
+</tr>
+<tr>
+  <td>Apr 18, 2025<br/>(4 hrs)</td>
+  <td>Project: Build a Simple DBMS Application</td>
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a href="https://www.freecodecamp.org/news/build-a-simple-database-management-system-with-python/" target="_blank">FreeCodeCamp DBMS App</a></td>
+  <td><a href="https://www.hackerrank.com/challenges/sql-2/problem" target="_blank">DBMS Practice</a></td>
+</tr>
+<tr>
+  <td>Apr 19, 2025<br/>(4 hrs)</td>
+  <td>Project: Create a Simple Web Application with Flask</td>
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a href="https://flask.palletsprojects.com/en/2.0.x/tutorial/" target="_blank">Flask Tutorial</a></td>
+  <td><a href="https://www.hackerrank.com/challenges/flask-api/problem" target="_blank">Flask Web App Challenge</a></td>
+</tr>
+<tr>
+  <td>Apr 20, 2025<br/>(4 hrs)</td>
+  <td>Project: Create a Simple Portfolio Website</td>
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a href="https://www.freecodecamp.org/news/how-to-build-a-personal-portfolio-with-html-css-and-javascript/" target="_blank">FreeCodeCamp Portfolio</a></td>
+  <td><a href="https://www.hackerrank.com/challenges/portfolio-website/problem" target="_blank">Portfolio Challenge</a></td>
+</tr>
+
+<td>Apr 21, 2025<br/>(4 hrs)</td>
+  <td>Project: Create any project of your own solving a real world problem
+  <td>4 hrs</td>
+  <td>Intermediate</td>
+  <td><a </a></td>
+  <td><a </a></td>
+</tr>
+      
+      
+      
+      
+      
+      
+      
