@@ -479,7 +479,22 @@
   <td><a </a></td>
   <td><a </a></td>
 </tr>
-      
+<input type="checkbox" class="progress-check" data-index="0"> 
+
+   document.addEventListener("DOMContentLoaded", function () {
+    const checks = document.querySelectorAll(".progress-check");
+
+    checks.forEach((checkbox, index) => {
+        const isChecked = localStorage.getItem(`progress-${index}`);
+        if (isChecked === "true") {
+            checkbox.checked = true;
+        }
+
+        checkbox.addEventListener("change", () => {
+            localStorage.setItem(`progress-${index}`, checkbox.checked ? "true" : "false");
+        });
+    });
+});   
       
       
       
